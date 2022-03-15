@@ -1,6 +1,6 @@
 <?php
 
-namespace Uipps\LaravelLogClear\App\Console\Commands;
+namespace Uipps\LaravelLogClear\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;

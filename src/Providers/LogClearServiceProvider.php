@@ -1,9 +1,9 @@
 <?php
 
-namespace Uipps\LaravelLogClear\App\Providers;
+namespace Uipps\LaravelLogClear\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Uipps\LaravelLogClear\App\Console\Commands\LogClearCommand;
+use Uipps\LaravelLogClear\Commands\LogClearCommand;
 
 class LogClearServiceProvider extends ServiceProvider
 {
