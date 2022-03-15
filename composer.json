@@ -1,0 +1,33 @@
+{
+    "name": "uipps/laravel-log-clear",
+    "description": "A laravel artisan log clear",
+    "keywords": ["log", "clear", "laravel"],
+    "homepage": "https://uipps.github.io/",
+    "support": {
+        "issues": "https://github.com/uipps/laravel-log-clear/issues",
+        "source": "https://github.com/uipps/laravel-log-clear"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "uipps",
+            "email": "uipps_com@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.1|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uipps\\LaravelLogClear\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uipps\\LaravelLogClear\\App\\Providers\\LogClearServiceProvider"
+            ]
+        }
+    }
+}
