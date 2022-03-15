@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Uipps\\LaravelLogClear\\": "src/"
+            "Uipps\\": "src/"
         }
     },
     "extra": {
