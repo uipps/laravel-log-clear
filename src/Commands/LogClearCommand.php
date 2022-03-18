@@ -47,12 +47,20 @@ class LogClearCommand extends Command
      */
     public function handle()
     {
-        $this->info(date('Y-m-d H:i:s') . ' begin: ');
+        $this->info(date('Y-m-d H:i:s') . ' log clear begin: ');
+
+        $this->doLogClear();
+
+        $this->info(date('Y-m-d H:i:s') . ' log clear end!');
+        return ;
+    }
+
+    protected function doLogClear() {
 
         $path_log = storage_path('logs/');
 
         if ($this->option('dry-run'))
-            $this->info('This is a dry-run. Deleting not work. It Just prints some informations!');
+            $this->info(' This is a dry-run. Deleting not work. It Just prints some informations!');
 
         // get all log files
         $files = $this->getAllLogFiles($path_log);
@@ -88,7 +96,6 @@ class LogClearCommand extends Command
         if ($msg)
             $this->comment($msg);
 
-        $this->info(date('Y-m-d H:i:s') . ' end!');
         return ;
     }
 
