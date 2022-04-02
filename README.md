@@ -29,6 +29,10 @@ Assuming you have already configured your database, you are now all set to go.
 php artisan log:clear
 
 
+// full params
+php artisan log:clear -k 2 -d
+
+
 // Get info about the command and options
 php artisan log:clear --help
 
